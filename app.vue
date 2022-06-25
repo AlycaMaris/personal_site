@@ -1,4 +1,12 @@
-<script>
+<template>
+  <Nav />
+  <Hero />
+  <Academics />
+  <Books />
+  <Footer />
+</template>
+
+<!-- <script>
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
@@ -12,22 +20,28 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import Hero from "./components/Hero.vue";
+import Academics from "./components/Academics.vue";
+import Books from "./components/Books.vue";
 
 export default {
   components: {
     Swiper,
     SwiperSlide,
-  },
+    Hero,
+    Academics,
+    Books
+},
   setup() {
     return {
       modules: [Navigation, Pagination, Mousewheel, Keyboard],
     };
   },
 };
-</script>
+</script> -->
 
-<template>
-<nav class="navbar">
+
+<!-- <nav class="navbar">
   <div class="container">
     <div id="navMenu" class="navbar-menu">
       <div class="navbar-start">
@@ -49,17 +63,18 @@ export default {
       </div>
     </div>
   </div>
-</nav>
+</nav> -->
 
-<section class="hero is-link is-fullheight-with-navbar">
+<!-- <section class="hero is-primary is-fullheight-with-navbar">
   <div class="hero-body">
     <p class="title">
       Fullheight hero with navbar
     </p>
   </div>
-</section>
+</section> -->
 
-<section class="section is-medium">
+
+<!-- <section class="section is-info is-medium">
   <h1 class="title">Academics</h1>
   <div class="tile is-ancestor">
     <swiper
@@ -77,9 +92,9 @@ export default {
     </swiper>
 
   </div>
-</section>
+</section> -->
 
-<section class="hero is-danger is-fullheight">
+<!-- <section class="hero is-success is-fullheight">
   <div class="hero-body">
     <div class="">
       <p class="title">
@@ -90,16 +105,9 @@ export default {
       </p>
     </div>
   </div>
-</section>
+</section> -->
 
-<section class="section is-large">
-  <h1 class="title">Large section</h1>
-  <h2 class="subtitle">
-    A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
-  </h2>
-</section>
-
-<h1 class="title">
+<!-- <h1 class="title">
   Bulma
   </h1>
 
@@ -136,9 +144,9 @@ export default {
     </p>
   </div>
 </footer>
-</template>
+</template> -->
 
-<style>
+<!-- <style>
 .swiper {
   width: 100%;
   height: 100%;
@@ -170,4 +178,4 @@ export default {
   height: 100%;
   object-fit: cover;
 }
-</style>
+</style> -->

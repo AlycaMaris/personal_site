@@ -21,16 +21,10 @@
 
 <style scoped>
 
-/* .footer-basic {
-    height: 21rem;
-    background: url('~/assets/img/footerbg.webp') no-repeat;
-    background-color: #202020;
-    background-position: top;
-    background-size: cover;
+.footer {
+    background-color: #393939;
+    color: #EFF0EB;
 }
-.footer-container {
-    padding-top: 14rem;
-} */
 .socials {
     text-align: center;
     padding-bottom: 15px;
@@ -46,8 +40,9 @@
     color: inherit;
 
 }
+
 .social:hover {
-    opacity: 0.9;
+    color: #549E54;
 }
 .copyright {
     text-align: center;
@@ -56,4 +51,4 @@
 
     margin-bottom: 0;
 }
-</style> -->
+</style> 

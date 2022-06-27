@@ -52,3 +52,28 @@ $input-shadow: none;
 
 // Import component
 //@import "bulmaCarousel.sass"
+::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+::-webkit-scrollbar-track-piece {
+        background-color: #393939;
+        // border-radius: 100vw;
+        // margin-block: 0.5em;
+    }
+    
+::-webkit-scrollbar-thumb:vertical {
+        background-color: #549E54;
+        border-radius: 100vw;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #335f33;
+    }
+
+@supports (scrollbar-color: #393939 #549E54) {
+    * {
+        scrollbar-color: #393939 #549E54;
+        scrollbar-width: thin;
+    }
+}

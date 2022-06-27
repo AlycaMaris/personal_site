@@ -1,4 +1,5 @@
 <script>
+//SWIPER COMPONENT
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
@@ -24,10 +25,11 @@ export default {
     };
 },
 };
+
 </script>
 
 <template>
-    <section class="section is-info is-medium">
+    <section class="section is-info is-medium academics">
         <h1 class="title">Academics</h1>
         <div class="tile is-ancestor">
             <swiper
@@ -39,15 +41,20 @@ export default {
                 :modules="modules"
                 class="mySwiper hero-body section is-medium tile is-9"
                 >
-                <swiper-slide>Slide 1</swiper-slide>
+                <swiper-slide><img class="brainimage js-modal-trigger" src="/images/Brain.jpg" alt="Mindmap of the brain" data-target="modal-js-example" @click="showModal = true"></swiper-slide>
                 <swiper-slide>Slide 2</swiper-slide>
                 <swiper-slide>Slide 3</swiper-slide>
             </swiper>
         </div>
     </section>
+
 </template>
 
 <style>
+.academics {
+    background-color: #549E54;
+}
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -56,7 +63,6 @@ export default {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
 
   /* Center slide text vertically */
     display: -webkit-box;
@@ -78,5 +84,13 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.brainimage {
+    border-radius: 8px;
+}
+
+:root {
+    --swiper-theme-color: #393939;
 }
 </style>

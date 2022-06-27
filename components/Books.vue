@@ -1,5 +1,5 @@
 <template>
-    <section class="hero is-success is-fullheight">
+    <section class="hero is-primary is-fullheight">
         <div class="hero-body">
             <div class="">
                 <p class="title">
